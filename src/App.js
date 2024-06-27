@@ -13,7 +13,7 @@ const App = () => {
   const [isEditing, setIsEditing] = useState(false);
 
   useEffect(() => {
-    fetchPosts(); // Fetch posts from local storage or mock API on initial load
+    fetchPosts(); 
   }, []);
 
   const fetchPosts = () => {
@@ -42,7 +42,7 @@ const App = () => {
     const updatedPosts = posts.filter(post => post.id !== postId);
     setPosts(updatedPosts);
     localStorage.setItem('blogPosts', JSON.stringify(updatedPosts));
-    setSelectedPost(null); // Deselect post if currently viewing deleted post
+    setSelectedPost(null); 
   };
 
   const handleAddClick = () => {
