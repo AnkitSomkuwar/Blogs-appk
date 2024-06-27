@@ -17,7 +17,7 @@ const App = () => {
   }, []);
 
   const fetchPosts = () => {
-    // Fetch posts from local storage or mock API
+   
     const postsFromStorage = JSON.parse(localStorage.getItem('blogPosts')) || [];
     setPosts(postsFromStorage);
   };
